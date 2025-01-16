@@ -10,7 +10,7 @@ const TimerChallenge = ({ title, targetTime }) => {
     setTimerStarted(true);
     timer.current = setTimeout(() => {
       setTimerExpired(true);
-      dialog.current.test();
+      dialog.current.open();
     }, targetTime * 1000);
   }
   function handleStop() {
@@ -19,7 +19,7 @@ const TimerChallenge = ({ title, targetTime }) => {
   }
   return (
     <>
-<ResultModal targetTime={targetTime} result="lost" ref={dialog} />
+      <ResultModal targetTime={targetTime} result="lost" ref={dialog} />
       <section className="challenge">
         <h2>{title}</h2>
 
@@ -32,7 +32,7 @@ const TimerChallenge = ({ title, targetTime }) => {
             {timerStarted ? "Stop" : "Start"} Challenge
           </button>
         </p>
-        <p className={timerStarted && "active"}>
+        <p className={timerStarted ? "active":''}>
           {timerStarted ? "Time is runnung" : "Timer inactive"}
         </p>
       </section>

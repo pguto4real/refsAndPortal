@@ -5,8 +5,8 @@ const ResultModal = ({ result, targetTime, ref }) => {
 
   useImperativeHandle(ref, () => {
     return{
-        test(){
-            console.log(result)
+        open(){
+            dialog.current.showModal()
         }
     }
   });
