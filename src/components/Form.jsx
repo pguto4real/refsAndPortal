@@ -15,14 +15,7 @@ const Form =   ({props, ref}) => {
     <form ref={formRef}>
        <Paragraph label="Name" type={"text"}/>
        <Paragraph label="Email" type={"email"}/>
-      <p>
-        <label>Name</label>
-        <input type="text" />
-      </p>
-      <p>
-        <label>Email</label>
-        <input type="email" />
-      </p>
+     
       <p id="actions">
         <button type="button">Save</button>
       </p>
