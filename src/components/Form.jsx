@@ -12,6 +12,7 @@ const Form =   ({props, ref}) => {
 
   return (
     <form ref={formRef}>
+       <Paragraph label="name" type={text}/>
       <p>
         <label>Name</label>
         <input type="text" />
