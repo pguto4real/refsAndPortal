@@ -1,5 +1,6 @@
 import React from 'react';
 import Paragraph from './Paragraph';
+import Button from './Button';
 
 const Form =   ({props, ref}) => {
   const formRef = React.useRef();
@@ -17,6 +18,7 @@ const Form =   ({props, ref}) => {
        <Paragraph label="Email" type={"email"}/>
      
       <p id="actions">
+      <Button type="button">Save</Button>
         <button type="button">Save</button>
       </p>
     </form>
