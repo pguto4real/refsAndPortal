@@ -1,12 +1,12 @@
-import React from 'react'
+import React from "react";
 
-const Paragraph = ({label,type}) => {
+const Paragraph = ({ label, type }) => {
   return (
     <p>
-    <label>Name</label>
-    <input type="text" />
-  </p>
-  )
-}
+      <label>{label}</label>
+      <input type={type} />
+    </p>
+  );
+};
 
-export default Paragraph
+export default Paragraph;

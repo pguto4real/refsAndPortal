@@ -1,4 +1,5 @@
 import React from 'react';
+import Paragraph from './Paragraph';
 
 const Form =   ({props, ref}) => {
   const formRef = React.useRef();
@@ -12,7 +13,7 @@ const Form =   ({props, ref}) => {
 
   return (
     <form ref={formRef}>
-       <Paragraph label="name" type={text}/>
+       <Paragraph label="Name" type={"text"}/>
       <p>
         <label>Name</label>
         <input type="text" />
