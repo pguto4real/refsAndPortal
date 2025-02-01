@@ -19,7 +19,6 @@ const Form =   ({props, ref}) => {
      
       <p id="actions">
       <Button type="button">Save</Button>
-        <button type="button">Save</button>
       </p>
     </form>
   );
